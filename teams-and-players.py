@@ -5,8 +5,8 @@ import os
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
 # Input filenames
-player_files = [os.path.join(project_root, 'data', f"skaters_{year}.csv") for year in range(2023, 2025)]
-team_files = [os.path.join(project_root, 'data', f"teams_{year}.csv") for year in range(2023, 2025)]
+player_files = [os.path.join(project_root, 'data', 'skaters_data', f"skaters_{year}.csv") for year in range(2008, 2025)]
+team_files = [os.path.join(project_root, 'data', 'teams_data', f"teams_{year}.csv") for year in range(2008, 2025)]
 
 # Output filename
 skater_output_filename = os.path.join(project_root, 'skaters_combined_data.csv')
